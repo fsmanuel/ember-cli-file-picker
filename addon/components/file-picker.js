@@ -165,7 +165,9 @@ export default Component.extend({
       };
 
       reader.onprogress = (event) => {
-        this.set('progressValue', event.loaded / event.total * 100);
+        Ember.run(() => {
+          this.set('progressValue', event.loaded / event.total * 100);
+        });
       };
 
       reader[readAs](file);
