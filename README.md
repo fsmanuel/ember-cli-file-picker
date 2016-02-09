@@ -132,7 +132,7 @@ import './ember-cli-file-picker';
 
 // tests/acceptance/file-upload.js
 import { test } from 'qunit';
-import moduleForAcceptance from 'hoch1-catalog/tests/helpers/module-for-acceptance';
+import moduleForAcceptance from '../helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | file upload');
 
